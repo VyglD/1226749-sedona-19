@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
-* Студент: [Дмитрий Выгловский](https://up.htmlacademy.ru/adaptive/19/user/1226749).
-* Наставник: [Кирилл Генералов](https://up.htmlacademy.ru/adaptive/19/user/623069).
+* Студент: [Выгловский Дмитрий](https://up.htmlacademy.ru/adaptive/19/user/1226749).
+* Наставник: [Генералов Кирилл](https://up.htmlacademy.ru/adaptive/19/user/623069).
 
 ---
 
