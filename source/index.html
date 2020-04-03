@@ -4,9 +4,189 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
   </head>
-  <body>
+  <body class="page">
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+    <header class="page-header">
+
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <button class="main-nav__close-button" type="button">Скрыть меню</button>
+        <ul class="main-nav__list list-links">
+          <li class="list-links__item">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="list-links__item">
+            <a href="photo.html">Фото и видео</a>
+          </li>
+          <li class="list-links__item">
+            <a href="form.html">Форма отзыва</a>
+          </li>
+          <li class="list-links__item">
+            <a href="https://htmlacademy.ru/">HTML Academy</a>
+          </li>
+        </ul>
+      </nav>
+
+      <a class="page-header__logo" href="">
+        <img class="page-header__logo-image" src="https://via.placeholder.com/102x83" width="102" height="83" alt="Логотип сервиса по поиску гостиниц в городе Седона">
+      </a>
+
+    </header>
+
+    <main class="page-main">
+
+      <h1 class="visually-hidden">Сервис по поиску гостиниц в городе Седона</h1>
+
+      <section class="sedona-info">
+
+        <header class="sedona-info__header">
+
+          <h2 class="visually-hidden">Информация о городе Седона</h2>
+
+          <div class="sedona-info__poster">
+            <img class="sedona-info__poster-wellcome" src="https://via.placeholder.com/170x70" width="170" height="70" alt="Добро пожаловать">
+            <img class="sedona-info__poster-title" src="https://via.placeholder.com/280x70" width="280" height="70" alt="Седона">
+            <img class="sedona-info__poster-sub-title" src="https://via.placeholder.com/190x60" width="190" height="60" alt="Хорошего отдыха">
+          </div>
+
+          <p class="sedona-info__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
+          <p class="sedona-info__sub-title">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+
+        </header>
+
+        <section class="reasons-list">
+
+          <h3 class="visually-hidden">Список причин крутости Седоны</h3>
+
+          <ul class="reasons-list__list">
+
+            <li class="reasons-list__item-list reason reason--decorate">
+
+              <div class="reason__wrapper">
+                <p class="reason__title">Настоящий городок</p>
+                <p class="reason__number"> — №1 — </p>
+                <p class="reason__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
+              </div>
+
+              <img class="reason__img" src="https://via.placeholder.com/320x260" width="320" height="260" alt="Аутентичная архитектура">
+
+              <ul class="reason__sub-reasons sub-reasons">
+
+                <li class="sub-reasons__item">
+                  <div class="sub-reasons__wrapper-item">
+                    <p class="sub-reasons__title">Жилье</p>
+                    <p class="sub-reasons__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+                  </div>
+                </li>
+
+                <li class="sub-reasons__item">
+                  <div class="sub-reasons__wrapper-item">
+                    <p class="sub-reasons__title">Сувениры!</p>
+                    <p class="sub-reasons__description">Не только китайского, но и местного производства</p>
+                  </div>
+                </li>
+
+                <li class="sub-reasons__item">
+                  <div class="sub-reasons__wrapper-item">
+                    <p class="sub-reasons__title">Еда</p>
+                    <p class="sub-reasons__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                  </div>
+                </li>
+
+              </ul>
+
+            </li>
+
+            <li class="reasons-list__item-list reason reason--decorate">
+
+              <div class="reason__wrapper">
+                <p class="reason__title">Там есть мост дьявола</p>
+                <p class="reason__number"> — №2 — </p>
+                <p class="reason__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+              </div>
+
+              <img class="reason__img" src="https://via.placeholder.com/320x260" width="320" height="260" alt="Каменная арка между двух скал">
+
+            </li>
+
+            <li class="reasons-list__item-list reason reason--decorate">
+              <div class="reason__wrapper">
+                <p class="reason__title">Небольшая площадь</p>
+                <p class="reason__number"> — №3 — </p>
+                <p class="reason__description">Все интересные места находятся очень близко</p>
+              </div>
+            </li>
+
+            <li class="reasons-list__item-list reason reason--decorate">
+              <div class="reason__wrapper">
+                <p class="reason__title">Красивая дорога!</p>
+                <p class="reason__number"> — №4 — </p>
+                <p class="reason__description">Ехать в седону из лас-вегаса совсем не скучно</p>
+              </div>
+            </li>
+
+            <li class="reasons-list__item-list reason reason--decorate">
+              <div class="reason__wrapper">
+                <p class="reason__title">Мало туристов</p>
+                <p class="reason__number"> — №5 — </p>
+                <p class="reason__description">Большинство едет в гранд каньон и толпится там</p>
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+
+        <section class="search-prepare">
+          <h3 class="visually-hidden">Переход для поиска гостиниц</h3>
+          <p class="search-prepare__title">Заинтересовались?</p>
+          <p class="search-prepare__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          <button class="search-prepare_button" type="button">Найти гостиницу</button>
+        </section>
+
+      </section>
+
+      <section class="dislocation">
+        <h2 class="visually-hidden">Местораположение города Седона</h2>
+        <img src="https://via.placeholder.com/320x350" width="320" height="350" alt="США, штат Аризона, город Седона">
+      </section>
+
+    </main>
+
+    <footer class="page-footer">
+
+      <p class="page-footer__hashtag">#visitsedona</p>
+
+      <ul class="page-footer__links-list links-list">
+
+        <li class="links-list__item">
+          <a href="">
+            <img class="links-list__link-img links-list__link-img--twitter" src="https://via.placeholder.com/46x48" width="46" height="48" alt="Sedona Twitter">
+          </a>
+        </li>
+
+        <li class="links-list__item">
+          <a href="">
+            <img class="links-list__link-img links-list__link-img--facebook" src="https://via.placeholder.com/46x48" width="46" height="48" alt="Sedona Facebook">
+          </a>
+        </li>
+
+        <li class="links-list__item">
+          <a href="">
+            <img class="links-list__link-img links-list__link-img--youtube" src="https://via.placeholder.com/46x48" width="46" height="48" alt="Sedona Youtube">
+          </a>
+        </li>
+
+      </ul>
+
+      <div class="page-footer__copyright">
+        <p class="page-footer__copyright-description">Разработано</p>
+        <a href="https://htmlacademy.ru/">
+          <img class="page-footer__logo-developers" src="https://via.placeholder.com/27x34" width="27" height="34" alt="Логотип HTML Academy">
+        </a>
+        </div>
+
+    </footer>
 
   </body>
 </html>
