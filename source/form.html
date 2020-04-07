@@ -5,12 +5,10 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body class="page">
-
     <header class="page-header">
-
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <button class="main-nav__close-button" type="button">Скрыть меню</button>
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <button class="main-nav__close-button" type="button"><span class="visually-hidden">Скрыть меню</span></button>
         <ul class="main-nav__list list-links">
           <li class="list-links__item">
             <a href="index.html">Главная</a>
@@ -26,59 +24,49 @@
           </li>
         </ul>
       </nav>
-
-      <a class="page-header__logo" href="">
-        <img class="page-header__logo-image" src="https://via.placeholder.com/102x83" width="102" height="83" alt="Логотип сервиса по поиску гостиниц в городе Седона">
-      </a>
-
-    </header>
-
-    <main class="page-main main-form">
-
-      <div class="page-poster">
-        <img class="page-poster__title" src="https://via.placeholder.com/280x70" width="280" height="70" alt="Седона">
+      <div class="page-header__logo logo-main">
+        <a class="logo-main__link" href="#">
+          <img class="logo-main__image" src="https://via.placeholder.com/102x83" width="102" height="83" alt="Логотип сервиса по поиску гостиниц в городе Седона">
+        </a>
       </div>
-
-      <h1 class="main-form__title">Оставьте свой отзыв</h1>
+    </header>
+    <main class="page-main page-main--form">
+      <header class="page-main__header page-main__header--form main-header">
+        <div class="main-header__poster poster">
+          <img class="poster__title" src="https://via.placeholder.com/280x70" width="280" height="70" alt="Седона">
+        </div>
+      </header>
+      <h1 class="page-main__title page-main__title--form">Оставьте свой отзыв</h1>
+      <p class="page-main__sub-title">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
 
       <!-- red block -->
 
     </main>
-
     <footer class="page-footer">
-
       <p class="page-footer__hashtag">#visitsedona</p>
-
-      <ul class="page-footer__links-list links-list">
-
-        <li class="links-list__item">
-          <a href="">
-            <img class="links-list__link-img links-list__link-img--twitter" src="https://via.placeholder.com/46x48" width="46" height="48" alt="Sedona Twitter">
+      <ul class="page-footer__social social">
+        <li class="social__item">
+          <a class="social_link" href="#">
+            <img class="social__link-img social__link-img--twitter" src="https://via.placeholder.com/46x48" width="46" height="48" alt="Sedona Twitter">
           </a>
         </li>
-
-        <li class="links-list__item">
-          <a href="">
-            <img class="links-list__link-img links-list__link-img--facebook" src="https://via.placeholder.com/46x48" width="46" height="48" alt="Sedona Facebook">
+        <li class="social__item">
+          <a class="social_link" href="#">
+            <img class="social__link-img social__link-img--facebook" src="https://via.placeholder.com/46x48" width="46" height="48" alt="Sedona Facebook">
           </a>
         </li>
-
-        <li class="links-list__item">
-          <a href="">
-            <img class="links-list__link-img links-list__link-img--youtube" src="https://via.placeholder.com/46x48" width="46" height="48" alt="Sedona Youtube">
+        <li class="social__item">
+          <a class="social_link" href="#">
+            <img class="social__link-img social__link-img--youtube" src="https://via.placeholder.com/46x48" width="46" height="48" alt="Sedona Youtube">
           </a>
         </li>
-
       </ul>
-
-      <div class="page-footer__copyright">
-        <p class="page-footer__copyright-description">Разработано</p>
-        <a href="https://htmlacademy.ru/">
-          <img class="page-footer__logo-developers" src="https://via.placeholder.com/27x34" width="27" height="34" alt="Логотип HTML Academy">
+      <div class="page-footer__copyright copyright">
+        <p class="copyright__description">Разработано</p>
+        <a class="copyright__link" href="https://htmlacademy.ru/">
+          <img class="copyright__logo-developers" src="https://via.placeholder.com/27x34" width="27" height="34" alt="Логотип HTML Academy">
         </a>
       </div>
-
     </footer>
-
   </body>
 </html>

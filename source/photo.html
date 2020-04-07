@@ -5,12 +5,10 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body class="page">
-
     <header class="page-header">
-
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <button class="main-nav__close-button" type="button">Скрыть меню</button>
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <button class="main-nav__close-button" type="button"><span class="visually-hidden">Скрыть меню</span></button>
         <ul class="main-nav__list list-links">
           <li class="list-links__item">
             <a href="index.html">Главная</a>
@@ -26,128 +24,102 @@
           </li>
         </ul>
       </nav>
-
-      <a class="page-header__logo" href="">
-        <img class="page-header__logo-image" src="https://via.placeholder.com/102x83" width="102" height="83" alt="Логотип сервиса по поиску гостиниц в городе Седона">
-      </a>
-
+      <div class="page-header__logo logo-main">
+        <a class="logo-main__link" href="#">
+          <img class="logo-main__image" src="https://via.placeholder.com/102x83" width="102" height="83" alt="Логотип сервиса по поиску гостиниц в городе Седона">
+        </a>
+      </div>
     </header>
-
-    <main class="page-main main-photo">
-
-      <div class="page-poster">
-        <img class="page-poster__title" src="https://via.placeholder.com/280x70" width="280" height="70" alt="Седона">
-      </div>
-
-      <h1 class="main-photo__title">Фото и видео</h1>
-
-      <div class="main-photo__description-wrapper">
-        <p class="main-photo__description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
-      </div>
-
-      <section class="main-photo_photo photo-album">
-
+    <main class="page-main page-main--photo">
+      <header class="page-main__header page-main__header--photo main-header">
+        <div class="main-header__poster poster">
+          <img class="poster__title" src="https://via.placeholder.com/280x70" width="280" height="70" alt="Седона">
+        </div>
+      </header>
+      <h1 class="page-main__title page-main__title--photo">Фото и видео</h1>
+      <p class="page-main__sub-title">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+      <section class="page-main__posts posts">
         <h2 class="visually-hidden">Фотографии Седоны</h2>
-
-        <ul class="photo-album__list">
-
-          <li class="photo-album__list-item photo-album__list-item--top">
-            <img class="photo-album__photo" src="https://via.placeholder.com/280x280" width="280" height="280" alt="Закат над скалами">
-            <div>
-              <p class="photo-album__photo-title">Неродные просторы</p>
-              <p class="photo-album__photo-author">Автор фото: Борис</p>
-              <div class="photo-album__wrapper-photo-rating">
-                <button class="photo-album__like-button" type="button">Нравится</button>
-                <p class="photo-album__like-photo-rating">1350</p>
+        <ul class="posts__list">
+          <li class="posts__post post post--top">
+            <img class="post__photo" src="https://via.placeholder.com/280x280" width="280" height="280" alt="Закат над скалами">
+            <div class="post__post-info post-info">
+              <p class="post-info__title">Неродные просторы</p>
+              <p class="post-info__author">Автор фото: Борис</p>
+              <div class="post-info__wrapper-likes">
+                <button class="post-info__like-button" type="button">Нравится</button>
+                <p class="post-info__likes">1350</p>
               </div>
             </div>
           </li>
-
-          <li class="photo-album__list-item">
-            <img class="photo-album__photo" src="https://via.placeholder.com/280x280" width="280" height="280" alt="Цветущий кактус">
-            <div>
-              <p class="photo-album__photo-title">Местная растительность</p>
-              <p class="photo-album__photo-author">Автор фото: Сергей</p>
-              <div class="photo-album__wrapper-photo-rating">
-                <button class="photo-album__like-button" type="button">Нравится</button>
-                <p class="photo-album__like-photo-rating">143</p>
+          <li class="posts__post post">
+            <img class="post__photo" src="https://via.placeholder.com/280x280" width="280" height="280" alt="Цветущий кактус">
+            <div class="post__post-info post-info">
+              <p class="post-info__title">Местная растительность</p>
+              <p class="post-info__author">Автор фото: Сергей</p>
+              <div class="post-info__wrapper-likes">
+                <button class="post-info__like-button" type="button">Нравится</button>
+                <p class="post-info__likes">143</p>
               </div>
             </div>
           </li>
-
-          <li class="photo-album__list-item">
-            <img class="photo-album__photo" src="https://via.placeholder.com/280x280" width="280" height="280" alt="Горный серпантин">
-            <div>
-              <p class="photo-album__photo-title">Дорога на север</p>
-              <p class="photo-album__photo-author">Автор фото: Петр</p>
-              <div class="photo-album__wrapper-photo-rating">
-                <button class="photo-album__like-button" type="button">Нравится</button>
-                <p class="photo-album__like-photo-rating">96</p>
+          <li class="posts__post post">
+            <img class="post__photo" src="https://via.placeholder.com/280x280" width="280" height="280" alt="Горный серпантин">
+            <div class="post__post-info post-info">
+              <p class="post-info__title">Дорога на север</p>
+              <p class="post-info__author">Автор фото: Петр</p>
+              <div class="post-info__wrapper-likes">
+                <button class="post-info__like-button" type="button">Нравится</button>
+                <p class="post-info__likes">96</p>
               </div>
             </div>
           </li>
-
-          <li class="photo-album__list-item">
-            <img class="photo-album__photo" src="https://via.placeholder.com/280x280" width="280" height="280" alt="Каменная арка между двух скал">
-            <div>
-              <p class="photo-album__photo-title">Мост дьявола</p>
-              <p class="photo-album__photo-author">Автор фото: Антон</p>
-              <div class="photo-album__wrapper-photo-rating">
-                <button class="photo-album__like-button" type="button">Нравится</button>
-                <p class="photo-album__like-photo-rating">254</p>
+          <li class="posts__post post">
+            <img class="post__photo" src="https://via.placeholder.com/280x280" width="280" height="280" alt="Каменная арка между двух скал">
+            <div class="post__post-info post-info">
+              <p class="post-info__title">Мост дьявола</p>
+              <p class="post-info__author">Автор фото: Антон</p>
+              <div class="post-info__wrapper-likes">
+                <button class="post-info__like-button" type="button">Нравится</button>
+                <p class="post-info__likes">254</p>
               </div>
             </div>
           </li>
-
         </ul>
-
       </section>
-
-      <section class="main-photo_video video-presentation">
-        <h2 class="visually-hidden">Видео из Седоны</h2>
-        <p class="video-presentation__title">Все еще сомневаетесь?</p>
-        <p class="video-presentation__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-        <video class="video-presentation__video">
+      <section class="page-main__presentation presentation">
+        <h2 class="presentation__title">Все еще сомневаетесь?</h2>
+        <p class="presentation__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+        <video class="presentation__video">
           <source src="">
         </video>
       </section>
-
     </main>
-
     <footer class="page-footer">
-
       <p class="page-footer__hashtag">#visitsedona</p>
-
-      <ul class="page-footer__links-list links-list">
-
-        <li class="links-list__item">
-          <a href="">
-            <img class="links-list__link-img links-list__link-img--twitter" src="https://via.placeholder.com/46x48" width="46" height="48" alt="Sedona Twitter">
+      <ul class="page-footer__social social">
+        <li class="social__item">
+          <a class="social_link" href="#">
+            <img class="social__link-img social__link-img--twitter" src="https://via.placeholder.com/46x48" width="46" height="48" alt="Sedona Twitter">
           </a>
         </li>
-
-        <li class="links-list__item">
-          <a href="">
-            <img class="links-list__link-img links-list__link-img--facebook" src="https://via.placeholder.com/46x48" width="46" height="48" alt="Sedona Facebook">
+        <li class="social__item">
+          <a class="social_link" href="#">
+            <img class="social__link-img social__link-img--facebook" src="https://via.placeholder.com/46x48" width="46" height="48" alt="Sedona Facebook">
           </a>
         </li>
-
-        <li class="links-list__item">
-          <a href="">
-            <img class="links-list__link-img links-list__link-img--youtube" src="https://via.placeholder.com/46x48" width="46" height="48" alt="Sedona Youtube">
+        <li class="social__item">
+          <a class="social_link" href="#">
+            <img class="social__link-img social__link-img--youtube" src="https://via.placeholder.com/46x48" width="46" height="48" alt="Sedona Youtube">
           </a>
         </li>
-
       </ul>
-
-      <div class="page-footer__copyright">
-        <p class="page-footer__copyright-description">Разработано</p>
-        <a href="https://htmlacademy.ru/">
-          <img class="page-footer__logo-developers" src="https://via.placeholder.com/27x34" width="27" height="34" alt="Логотип HTML Academy">
+      <div class="page-footer__copyright copyright">
+        <p class="copyright__description">Разработано</p>
+        <a class="copyright__link" href="https://htmlacademy.ru/">
+          <img class="copyright__logo-developers" src="https://via.placeholder.com/27x34" width="27" height="34" alt="Логотип HTML Academy">
         </a>
       </div>
-
     </footer>
-
   </body>
 </html>
