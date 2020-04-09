@@ -11,16 +11,24 @@
         <button class="main-nav__close-button" type="button"><span class="visually-hidden">Скрыть меню</span></button>
         <ul class="main-nav__list list-links">
           <li class="list-links__item">
-            <a href="index.html">Главная</a>
+            <a class="list-links__link" href="index.html">
+              <span>Главная</span>
+            </a>
           </li>
           <li class="list-links__item">
-            <a href="photo.html">Фото и видео</a>
+            <a class="list-links__link" href="photo.html">
+              <span>Фото и видео</span>
+            </a>
           </li>
           <li class="list-links__item">
-            <a href="form.html">Форма отзыва</a>
+            <a class="list-links__link" href="form.html">
+              <span>Форма отзыва</span>
+            </a>
           </li>
           <li class="list-links__item">
-            <a href="https://htmlacademy.ru/">HTML Academy</a>
+            <a class="list-links__link" href="https://htmlacademy.ru/">
+              <span>HTML Academy</span>
+            </a>
           </li>
         </ul>
       </nav>
@@ -32,8 +40,8 @@
     </header>
     <main class="page-main page-main--photo">
       <header class="page-main__header page-main__header--photo main-header">
-        <div class="main-header__poster poster">
-          <img class="poster__title" src="https://via.placeholder.com/280x70" width="280" height="70" alt="Седона">
+        <div class="main-header__poster">
+          <img class="main-header__poster-title" src="https://via.placeholder.com/280x70" width="280" height="70" alt="Седона">
         </div>
       </header>
       <h1 class="page-main__title page-main__title--photo">Фото и видео</h1>
@@ -43,45 +51,45 @@
         <ul class="posts__list">
           <li class="posts__post post post--top">
             <img class="post__photo" src="https://via.placeholder.com/280x280" width="280" height="280" alt="Закат над скалами">
-            <div class="post__post-info post-info">
-              <p class="post-info__title">Неродные просторы</p>
-              <p class="post-info__author">Автор фото: Борис</p>
-              <div class="post-info__wrapper-likes">
-                <button class="post-info__like-button" type="button">Нравится</button>
-                <p class="post-info__likes">1350</p>
+            <div class="post__info-post-wrapper">
+              <p class="post__title">Неродные просторы</p>
+              <p class="post__author">Автор фото: Борис</p>
+              <div class="post__wrapper-likes">
+                <button class="post__like-button" type="button">Нравится</button>
+                <p class="post__likes">1350</p>
               </div>
             </div>
           </li>
           <li class="posts__post post">
             <img class="post__photo" src="https://via.placeholder.com/280x280" width="280" height="280" alt="Цветущий кактус">
-            <div class="post__post-info post-info">
-              <p class="post-info__title">Местная растительность</p>
-              <p class="post-info__author">Автор фото: Сергей</p>
-              <div class="post-info__wrapper-likes">
-                <button class="post-info__like-button" type="button">Нравится</button>
-                <p class="post-info__likes">143</p>
+            <div class="post__info-post-wrapper">
+              <p class="post__title">Местная растительность</p>
+              <p class="post__author">Автор фото: Сергей</p>
+              <div class="post__wrapper-likes">
+                <button class="post__like-button" type="button">Нравится</button>
+                <p class="post__likes">143</p>
               </div>
             </div>
           </li>
           <li class="posts__post post">
             <img class="post__photo" src="https://via.placeholder.com/280x280" width="280" height="280" alt="Горный серпантин">
-            <div class="post__post-info post-info">
-              <p class="post-info__title">Дорога на север</p>
-              <p class="post-info__author">Автор фото: Петр</p>
-              <div class="post-info__wrapper-likes">
-                <button class="post-info__like-button" type="button">Нравится</button>
-                <p class="post-info__likes">96</p>
+            <div class="post__info-post-wrapper">
+              <p class="post__title">Дорога на север</p>
+              <p class="post__author">Автор фото: Петр</p>
+              <div class="post__wrapper-likes">
+                <button class="post__like-button" type="button">Нравится</button>
+                <p class="post__likes">96</p>
               </div>
             </div>
           </li>
           <li class="posts__post post">
             <img class="post__photo" src="https://via.placeholder.com/280x280" width="280" height="280" alt="Каменная арка между двух скал">
-            <div class="post__post-info post-info">
-              <p class="post-info__title">Мост дьявола</p>
-              <p class="post-info__author">Автор фото: Антон</p>
-              <div class="post-info__wrapper-likes">
-                <button class="post-info__like-button" type="button">Нравится</button>
-                <p class="post-info__likes">254</p>
+            <div class="post__info-post-wrapper">
+              <p class="post__title">Мост дьявола</p>
+              <p class="post__author">Автор фото: Антон</p>
+              <div class="post__wrapper-likes">
+                <button class="post__like-button" type="button">Нравится</button>
+                <p class="post__likes">254</p>
               </div>
             </div>
           </li>
@@ -99,17 +107,17 @@
       <p class="page-footer__hashtag">#visitsedona</p>
       <ul class="page-footer__social social">
         <li class="social__item">
-          <a class="social_link" href="#">
+          <a class="social__link" href="#">
             <img class="social__link-img social__link-img--twitter" src="https://via.placeholder.com/46x48" width="46" height="48" alt="Sedona Twitter">
           </a>
         </li>
         <li class="social__item">
-          <a class="social_link" href="#">
+          <a class="social__link" href="#">
             <img class="social__link-img social__link-img--facebook" src="https://via.placeholder.com/46x48" width="46" height="48" alt="Sedona Facebook">
           </a>
         </li>
         <li class="social__item">
-          <a class="social_link" href="#">
+          <a class="social__link" href="#">
             <img class="social__link-img social__link-img--youtube" src="https://via.placeholder.com/46x48" width="46" height="48" alt="Sedona Youtube">
           </a>
         </li>
