@@ -1,0 +1,23 @@
+.action-button {
+  width: 280px;
+  height: 58px;
+
+  .custom-font(bold; 21px; 26px; uppercase);
+  color: @color-decorate-element;
+
+  border: none;
+  background-color: @bg-decorate-element;
+}
+
+.action-button:hover {
+  background-color: @bg-decorate-element-hover;
+}
+
+.action-button:active {
+  background-color: @bg-decorate-element-active;
+  opacity: 0.3;
+}
+
+.action-button:disabled {
+  background-color: @bg-decorate-element-disabled;
+}
