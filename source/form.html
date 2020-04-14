@@ -51,9 +51,76 @@
         <h1 class="page-main__title page-main__title--form">Оставьте свой отзыв</h1>
         <p class="page-main__sub-title">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
       </div>
-
-      <!-- red block -->
-
+      <form method="POST" action="https://echo.htmlacademy.ru" class="page-main__form form">
+        <fieldset class="form__block form__block--half">
+          <legend class="form__block-title">Представьтесь:</legend>
+          <div class="form__input-wrapper">
+            <label for="fio-name-id">Имя*:</label>
+            <input type="text" name="fio-name" id="fio-name-id" placeholder="Петр" required>
+          </div>
+          <div class="form__input-wrapper">
+            <label for="fio-surname-id">Фамилия*:</label>
+            <input type="text" name="fio-surname" id="fio-surname-id" placeholder="Иванов" required>
+          </div>
+          <div class="form__input-wrapper">
+            <label for="fio-patronymic-id">Отчество*:</label>
+            <input type="text" name="fio-patronymic" id="fio-patronymic-id" placeholder="Александрович">
+          </div>
+        </fieldset>
+        <fieldset class="form__block">
+          <legend class="form__block-title">Контактная информация:</legend>
+          <div class="form__input-wrapper form__input-wrapper--phone">
+            <label for="phone-id">Контактный телефон*:</label>
+            <input type="tel" name="phone" id="phone-id" placeholder="Введите телефон" required>
+          </div>
+          <div class="form__input-wrapper form__input-wrapper--email">
+            <label for="email-id">Электронная почта*:</label>
+            <input type="email" name="email" id="email-id" placeholder="Ввведите e-mail" required>
+          </div>
+        </fieldset>
+        <fieldset class="form__block form__block--half">
+          <legend class="form__block-title">Ваше общее впечатление:</legend>
+          <div class="form__radio-wrapper">
+            <input type="radio" name="impression" id="impression-positive-id" value="Скорее положительное" checked>
+            <label for="impression-positive-id">Скорее положительное</label>
+          </div>
+          <div class="form__radio-wrapper">
+            <input type="radio" name="impression" id="impression-negative-id" value="Скорее отрицательное ">
+            <label for="impression-negative-id">Скорее отрицательное</label>
+          </div>
+          <div class="form__radio-wrapper">
+            <input type="radio" name="impression" id="impression-unknown-id" value="Затрудняюсь ответить">
+            <label for="impression-unknown-id">Затрудняюсь ответить</label>
+          </div>
+        </fieldset>
+        <fieldset class="form__block">
+          <legend class="form__block-title">Посещенные достопримечательности:</legend>
+          <div class="form__checkbox-wrapper">
+            <input type="checkbox" name="attractions" id="attractions-1" value="Мост Дьявола" checked>
+            <label for="attractions-1">Мост Дьявола</label>
+          </div>
+          <div class="form__checkbox-wrapper">
+            <input type="checkbox" name="attractions" id="attractions-2" value="Гора-Колокол" checked>
+            <label for="attractions-2">Гора-Колокол</label>
+          </div>
+          <div class="form__checkbox-wrapper">
+            <input type="checkbox" name="attractions" id="attractions-3" value="Слайд-парк" checked>
+            <label for="attractions-3">Слайд-парк</label>
+          </div>
+          <div class="form__checkbox-wrapper">
+            <input type="checkbox" name="attractions" id="attractions-4" value="Красные скалы">
+            <label for="attractions-4">Красные скалы</label>
+          </div>
+        </fieldset>
+        <fieldset class="form__block">
+          <legend class="form__block-title">Опишите свои эмоции:</legend>
+          <textarea class="form__feedback-textarea" name="feedback" placeholder="Опишите подробно все свои восторги"></textarea>
+          <div class="form__submit-wrapper">
+            <button class="form__submit action-button" type="submit">Отправить отзыв</button>
+            <p class="form__hint">* — обязательные поля</p>
+          </div>
+        </fieldset>
+      </form>
     </main>
     <footer class="page-footer">
       <p class="page-footer__hashtag">#visitsedona</p>
