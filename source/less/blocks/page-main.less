@@ -8,18 +8,18 @@
   background-color: gray;
   background-image: url("../../img/bg-back-mobile@1x.jpg");
   background-position: bottom;
-}
 
-.page-main__header--short {
-  height: 158px;
+  &--short {
+    height: 158px;
+  }
 }
 
 .page-main__poster {
   padding: 0;
-}
 
-.page-main__poster--short {
-  padding-bottom: 18px;
+  &--short {
+    padding-bottom: 18px;
+  }
 }
 
 .page-main__titles-wrapper {
@@ -27,15 +27,16 @@
   margin-bottom: 42px;
 
   .center-text(270px);
-}
 
-.page-main__titles-wrapper--photo {
-  margin-bottom: 26px;
-}
+  &--photo {
+    margin-top: 38px;
+    margin-bottom: 26px;
+  }
 
-.page-main__titles-wrapper--form {
-  width: 280px;
-  margin-top: 38px;
+  &--form {
+    width: 280px;
+    margin-top: 38px;
+  }
 }
 
 .page-main__title {
@@ -47,24 +48,27 @@
 
   .custom-font(regular; 14px; 24px; uppercase);
   color: @color-standart-decorate;
-}
 
-.page-main__sub-title--index {
-  line-height: 26px;
-}
+  &--index {
+    line-height: 26px;
+  }
 
-.page-main__sub-title--photo {
-  margin-top: 24px;
+  &--photo,
+  &--form {
+    margin-top: 26px;
+  }
 }
 
 .page-main__separate {
   position: absolute;
 
   margin-top: -26px;
-}
 
-.page-main__separate--reasons polygon {
-  fill: @bg-decorate-element;
+  &--reasons {
+    polygon {
+      fill: @bg-decorate-element;
+    }
+  }
 }
 
 .page-main__interested {
@@ -72,6 +76,6 @@
 }
 
 .page-main__presentation {
-  margin-top: 38px;
+  margin-top: 34px;
   margin-bottom: 106px;
 }

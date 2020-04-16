@@ -1,55 +1,15 @@
 @import "variables.less";
 @import "mixins.less";
+@import "common.less";
+@import "fonts.less";
 @import "blocks/main-nav.less";
 @import "blocks/list-links.less";
 @import "blocks/logo-main.less";
 @import "blocks/page-main.less";
 @import "blocks/reasons.less";
-@import "blocks/reason.less";
 @import "blocks/sub-reasons.less";
 @import "blocks/interested.less";
 @import "blocks/action-button.less";
 @import "blocks/page-footer.less";
 @import "blocks/posts.less";
 @import "blocks/presentation.less";
-
-@font-face {
-  font-family: "PT Sans";
-  src: url("../fonts/ptsans.woff2") format("woff2");
-  src: url("../fonts/ptsans.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "PT Sans";
-  src: url("../fonts/ptsansbold.woff2") format("woff2");
-  src: url("../fonts/ptsansbold.woff") format("woff");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-
-.page {
-  min-width: 320px;
-  margin: 0 auto;
-  padding: 0;
-  // временное свойство для верстки под мобильную версию
-  max-width: 320px;
-
-  color: @color-standart;
-}
-
-.visually-hidden {
-  position: absolute;
-
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
