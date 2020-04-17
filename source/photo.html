@@ -3,13 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body class="page">
     <header class="page-header">
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-        <button class="main-nav__close-button" type="button"><span class="visually-hidden">Скрыть меню</span></button>
-        <ul class="main-nav__list list-links">
+        <ul class="main-nav__list list-links list-style-reset">
           <li class="list-links__item">
             <a class="list-links__link" href="index.html">
               <span>Главная</span>
@@ -31,65 +31,86 @@
             </a>
           </li>
         </ul>
+        <button class="main-nav__close-button" type="button"><span class="visually-hidden">Скрыть меню</span></button>
       </nav>
       <div class="page-header__logo logo-main">
-        <a class="logo-main__link" href="#">
-          <img class="logo-main__image" src="https://via.placeholder.com/102x83" width="102" height="83" alt="Логотип сервиса по поиску гостиниц в городе Седона">
+        <a class="logo-main__link" href="index.html">
+          <img class="logo-main__image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Логотип сервиса по поиску гостиниц в городе Седона">
         </a>
       </div>
     </header>
     <main class="page-main page-main--photo">
-      <header class="page-main__header page-main__header--photo main-header">
-        <div class="main-header__poster">
-          <img class="main-header__poster-title" src="https://via.placeholder.com/280x70" width="280" height="70" alt="Седона">
-        </div>
+      <header class="page-main__header page-main__header--short">
+        <img class="page-main__poster page-main__poster--short" src="img/text-sedona.svg" width="229" height="39" alt="Седона">
       </header>
-      <h1 class="page-main__title page-main__title--photo">Фото и видео</h1>
-      <p class="page-main__sub-title">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+      <svg class="page-main__separate" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="320px" height="26.111px" viewBox="440.469 30.889 320 26.111" enable-background="new 440.469 30.889 320 26.111" xml:space="preserve">
+        <polygon fill="#FFFFFF" points="760.469,57 760.469,30.889 599.955,57"/>
+        <polygon fill="#FFFFFF" points="440.469,57 599.955,57 440.469,31.056"/>
+      </svg>
+      <div class="page-main__titles-wrapper page-main__titles-wrapper--photo">
+        <h1 class="page-main__title">Фото и видео</h1>
+        <p class="page-main__sub-title page-main__sub-title--photo">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+      </div>
       <section class="page-main__posts posts">
         <h2 class="visually-hidden">Фотографии Седоны</h2>
-        <ul class="posts__list">
-          <li class="posts__post post post--top">
-            <img class="post__photo" src="https://via.placeholder.com/280x280" width="280" height="280" alt="Закат над скалами">
-            <div class="post__info-post-wrapper">
-              <p class="post__title">Неродные просторы</p>
-              <p class="post__author">Автор фото: Борис</p>
-              <div class="post__wrapper-likes">
-                <button class="post__like-button" type="button">Нравится</button>
-                <p class="post__likes">1350</p>
+        <ul class="posts__list list-style-reset">
+          <li class="posts__list-item">
+            <div class="posts__post">
+              <img class="posts__post-photo" src="img/photo-sunset-mobile@1x.jpg" width="280" height="280" alt="Закат над скалами">
+              <div class="posts__info-wrapper">
+                <p class="posts__post-title">Неродные просторы</p>
+                <p class="posts__post-author">Автор фото: Борис</p>
+                <div class="posts__likes-wrapper">
+                  <button class="posts__like-button" type="button">
+                    <span class="visually-hidden">Нравится</span>
+                  </button>
+                  <p class="posts__likes">1350</p>
+                </div>
               </div>
             </div>
           </li>
-          <li class="posts__post post">
-            <img class="post__photo" src="https://via.placeholder.com/280x280" width="280" height="280" alt="Цветущий кактус">
-            <div class="post__info-post-wrapper">
-              <p class="post__title">Местная растительность</p>
-              <p class="post__author">Автор фото: Сергей</p>
-              <div class="post__wrapper-likes">
-                <button class="post__like-button" type="button">Нравится</button>
-                <p class="post__likes">143</p>
+          <li class="posts__list-item">
+            <div class="posts__post">
+              <img class="posts__post-photo" src="img/photo-cactus-mobile@1x.jpg" width="280" height="280" alt="Цветущий кактус">
+              <div class="posts__info-wrapper">
+                <p class="posts__post-title">Местная растительность</p>
+                <p class="posts__post-author">Автор фото: Сергей</p>
+                <div class="posts__likes-wrapper">
+                  <button class="posts__like-button" type="button">
+                    <span class="visually-hidden">Нравится</span>
+                  </button>
+                  <p class="posts__likes">143</p>
+                </div>
               </div>
             </div>
           </li>
-          <li class="posts__post post">
-            <img class="post__photo" src="https://via.placeholder.com/280x280" width="280" height="280" alt="Горный серпантин">
-            <div class="post__info-post-wrapper">
-              <p class="post__title">Дорога на север</p>
-              <p class="post__author">Автор фото: Петр</p>
-              <div class="post__wrapper-likes">
-                <button class="post__like-button" type="button">Нравится</button>
-                <p class="post__likes">96</p>
+          <li class="posts__list-item">
+            <div class="posts__post">
+              <img class="posts__post-photo" src="img/photo-roads-mobile@1x.jpg" width="280" height="280" alt="Горный серпантин">
+              <div class="posts__info-wrapper">
+                <p class="posts__post-title">Дорога на север</p>
+                <p class="posts__post-author">Автор фото: Петр</p>
+                <div class="posts__likes-wrapper">
+                  <button class="posts__like-button" type="button">
+                    <span class="visually-hidden">Нравится</span>
+                  </button>
+                  <p class="posts__likes">96</p>
+                </div>
               </div>
             </div>
           </li>
-          <li class="posts__post post">
-            <img class="post__photo" src="https://via.placeholder.com/280x280" width="280" height="280" alt="Каменная арка между двух скал">
-            <div class="post__info-post-wrapper">
-              <p class="post__title">Мост дьявола</p>
-              <p class="post__author">Автор фото: Антон</p>
-              <div class="post__wrapper-likes">
-                <button class="post__like-button" type="button">Нравится</button>
-                <p class="post__likes">254</p>
+          <li class="posts__list-item">
+            <div class="posts__post">
+              <img class="posts__post-photo" src="img/photo-bridge-mobile@1x.jpg" width="280" height="280" alt="Каменная арка между двух скал">
+              <div class="posts__info-wrapper">
+                <p class="posts__post-title">Мост дьявола</p>
+                <p class="posts__post-author">Автор фото: Антон</p>
+                <div class="posts__likes-wrapper">
+                  <button class="posts__like-button" type="button">
+                    <span class="visually-hidden">Нравится</span>
+                  </button>
+                  <p class="posts__likes">254</p>
+                </div>
               </div>
             </div>
           </li>
@@ -98,34 +119,50 @@
       <section class="page-main__presentation presentation">
         <h2 class="presentation__title">Все еще сомневаетесь?</h2>
         <p class="presentation__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-        <video class="presentation__video">
-          <source src="">
+        <video class="presentation__video" controls poster="img/video-mobile@1x.jpg">
+          <source src="" >
         </video>
       </section>
     </main>
     <footer class="page-footer">
       <p class="page-footer__hashtag">#visitsedona</p>
-      <ul class="page-footer__social social">
-        <li class="social__item">
-          <a class="social__link" href="#">
-            <img class="social__link-img social__link-img--twitter" src="https://via.placeholder.com/46x48" width="46" height="48" alt="Sedona Twitter">
+      <ul class="page-footer__socials list-style-reset">
+        <li class="page-footer__socials-item">
+          <a class="page-footer__socials-link" href="#">
+            <div class="page-footer__socials-img-wrapper">
+              <svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.5px" height="14.663px" viewBox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663" xml:space="preserve">
+                <g id="W6EeEF_1_">
+                  <g>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.283,0.153c1.736-0.484,3.074,0.264,3.685,1.15 c0.694-0.225,1.372-0.47,2.072-0.69c-0.004,0.841-0.538,1.478-0.883,1.728C16.861,2.506,17.5,1.86,17.5,1.86 c-0.175,0.977-1.035,1.746-1.611,1.977C15.65,10.429,12.617,14.793,5.507,14.66c-0.538,0,0.077,0-0.46,0 c-0.422,0-4.29-0.45-5.047-1.843c2.341,0.192,4.011-0.412,4.835-1.15c-0.989-0.293-2.761-0.464-3.07-2.881 c0.362,0.105,0.583,0.223,1.228,0.117C1.757,8.067,0.385,7.366,0.461,5.218c0.294,0.319,1.1,0.523,1.381,0.461 c-0.725-0.235-2.03-3.281-0.921-4.836C2.794,2.655,4.769,4.364,8.29,4.528C8.506,2.288,9.461,0.788,11.283,0.153z"/>
+                  </g>
+                </g>
+              </svg>
+            </div>
           </a>
         </li>
-        <li class="social__item">
-          <a class="social__link" href="#">
-            <img class="social__link-img social__link-img--facebook" src="https://via.placeholder.com/46x48" width="46" height="48" alt="Sedona Facebook">
+        <li class="page-footer__socials-item">
+          <a class="page-footer__socials-link" href="#">
+            <div class="page-footer__socials-img-wrapper">
+              <svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="8.672px" height="18.944px" viewBox="0 0 8.672 18.944" enable-background="new 0 0 8.672 18.944" xml:space="preserve">
+                <path d="M6.275,3.356c0.799,0,1.599,0,2.398,0c0-1.119,0-2.237,0-3.356c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.114 H0v3.518h1.959c0,3.104,0,6.208,0,9.312c1.279,0,2.559,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.114H5.787 C5.765,5.069,5.75,3.709,6.275,3.356z"/>
+              </svg>
+            </div>
           </a>
         </li>
-        <li class="social__item">
-          <a class="social__link" href="#">
-            <img class="social__link-img social__link-img--youtube" src="https://via.placeholder.com/46x48" width="46" height="48" alt="Sedona Youtube">
+        <li class="page-footer__socials-item">
+          <a class="page-footer__socials-link" href="#">
+            <div class="page-footer__socials-img-wrapper">
+              <svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="19.979px" height="14.015px" viewBox="0 0 19.979 14.015" enable-background="new 0 0 19.979 14.015" xml:space="preserve">
+                <path d="M17.145,0H2.835C1.275,0,0,1.275,0,2.835v8.345c0,1.56,1.275,2.835,2.835,2.835h14.31c1.56,0,2.835-1.275,2.835-2.835V2.835 C19.979,1.275,18.704,0,17.145,0z M7.036,10.392V3.623l6.769,3.384L7.036,10.392z"/>
+              </svg>
+            </div>
           </a>
         </li>
       </ul>
-      <div class="page-footer__copyright copyright">
-        <p class="copyright__description">Разработано</p>
-        <a class="copyright__link" href="https://htmlacademy.ru/">
-          <img class="copyright__logo-developers" src="https://via.placeholder.com/27x34" width="27" height="34" alt="Логотип HTML Academy">
+      <div class="page-footer__copyright">
+        <p class="page-footer__copyright-description">Разработано</p>
+        <a class="page-footer__copyright-link" href="https://htmlacademy.ru/">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60"><path d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/></svg>
         </a>
       </div>
     </footer>

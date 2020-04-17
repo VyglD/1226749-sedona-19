@@ -1,0 +1,81 @@
+.page-main__header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 389px;
+
+  background-color: gray;
+  background-image: url("../../img/bg-back-mobile@1x.jpg");
+  background-position: bottom;
+
+  &--short {
+    height: 158px;
+  }
+}
+
+.page-main__poster {
+  padding: 0;
+
+  &--short {
+    padding-bottom: 18px;
+  }
+}
+
+.page-main__titles-wrapper {
+  margin-top: 40px;
+  margin-bottom: 42px;
+
+  .center-text(270px);
+
+  &--photo {
+    margin-top: 38px;
+    margin-bottom: 26px;
+  }
+
+  &--form {
+    width: 280px;
+    margin-top: 38px;
+  }
+}
+
+.page-main__title {
+  .custom-font(bold; 18px; 26px; uppercase);
+}
+
+.page-main__sub-title {
+  margin-top: 28px;
+
+  .custom-font(regular; 14px; 24px; uppercase);
+  color: @color-standart-decorate;
+
+  &--index {
+    line-height: 26px;
+  }
+
+  &--photo,
+  &--form {
+    margin-top: 26px;
+  }
+}
+
+.page-main__separate {
+  position: absolute;
+
+  margin-top: -26px;
+
+  &--reasons {
+    polygon {
+      fill: @bg-decorate-element;
+    }
+  }
+}
+
+.page-main__interested {
+  padding-top: 10px;
+}
+
+.page-main__presentation {
+  margin-top: 34px;
+  margin-bottom: 106px;
+}
