@@ -19,7 +19,7 @@
 }
 
 .main-nav__toggle::before {
-  content: url("../../img/icon-cross.svg");
+  content: url("@{img-path}/icon-cross.svg");
 
   width: 23px;
   height: 22px;
@@ -31,11 +31,33 @@
   .main-nav-btn-decorate(240px; 20px);
 
   &::before {
-    content: url("../../img/icon-menu.svg");
+    content: url("@{img-path}/icon-menu.svg");
 
     width: 23px;
     height: 21px;
 
     cursor: pointer;
+  }
+}
+
+@media (min-width: @tablet) {
+  .main-nav {
+    display: flex;
+    justify-content: center;
+  }
+
+  .main-nav__toggle,
+  .main-nav__close-button {
+    display: none;
+  }
+
+  .main-nav__list {
+    flex-basis: @tablet;
+  }
+}
+
+@media (min-width: @desktop) {
+  .main-nav__list {
+    flex-basis: @desktop;
   }
 }

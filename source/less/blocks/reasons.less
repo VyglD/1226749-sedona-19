@@ -1,11 +1,21 @@
+.reasons__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .reasons__separate polygon {
   fill: @bg-decorate-element;
 }
 
 .reasons__item {
+  flex-basis: 100%;
   background-color: @bg-standart-decorate;
 
   &--decorate {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
     background-color: @bg-decorate-element;
   }
 
@@ -13,7 +23,7 @@
     content: "";
     display: block;
     margin: 0 auto;
-    width: 280px;
+    width: 100%;
     height: 1px;
 
     background-color: @color-standart;
@@ -27,6 +37,9 @@
 }
 
 .reasons__body-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding-top: 26px;
   padding-bottom: 28px;
 
@@ -80,5 +93,117 @@
 }
 
 .reasons__sub-reasons {
-  padding-bottom: 38px;
+  flex-basis: 100%;
+  padding-bottom: 19px;
+  padding-top: 27px;
+}
+
+@media (min-width: @tablet) and (max-width: @desktop - 1px) {
+  .reasons__body-wrapper {
+    &--decorate {
+      width: 162px;
+    }
+  }
+}
+
+@media (min-width: @tablet) {
+  .reasons__item {
+    flex-basis: calc(100% / 3);
+
+    &--decorate {
+      flex-basis: 100%;
+    }
+
+    &::after {
+      content: none;
+    }
+  }
+
+  .reasons__body-wrapper {
+    padding-top: 46px;
+    padding-bottom: 44px;
+  }
+
+  .reasons_img-wrapper {
+    &--second {
+      order: -1;
+    }
+  }
+
+  .reasons__item-img {
+    min-width: 512px;
+    height: 256px;
+  }
+
+  .reasons__item-title {
+    width: 150px;
+
+    font-size: 21px;
+  }
+
+  .reasons__item-number {
+    padding-bottom: 21px;
+
+    &--decorate {
+      padding-top: 8px;
+      padding-bottom: 22px;
+    }
+  }
+
+  .reasons__item-description {
+    width: 160px;
+
+    &--middle {
+      width: 145px;
+    }
+  }
+}
+
+@media (min-width: @desktop) {
+  .reasons__body-wrapper {
+    padding-bottom: 65px;
+
+    &--decorate {
+      padding-top: 53px;
+      padding-bottom: 44px;
+
+      .reasons__item-description {
+        width: auto;
+      }
+    }
+
+    &--second {
+      width: 225px;
+    }
+  }
+
+  .reasons__item-img {
+    width: auto;
+    height: auto;
+    margin-top: -70px;
+  }
+
+  .reasons_img-wrapper {
+    height: 256px;
+    width: 800px;
+    overflow: hidden;
+
+    &--second {
+      .reasons__item-img {
+        margin-top: -76px;
+      }
+    }
+  }
+
+  .reasons__item-title {
+    width: 150px;
+  }
+
+  .reasons__item-description {
+    width: 320px;
+
+    &--middle {
+      width: 270px;
+    }
+  }
 }

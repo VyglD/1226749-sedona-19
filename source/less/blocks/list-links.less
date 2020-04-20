@@ -48,3 +48,52 @@
     .custom-font(bold; 18px; 40px; uppercase);
   }
 }
+
+@media (min-width: @tablet) {
+  .list-links {
+    flex-direction: row;
+  }
+
+  .list-links__item {
+    flex-basis: 153px;
+
+    box-shadow: none;
+    background-color: @color-decorate-element;
+    border: none;
+
+    &:first-child,
+    &:last-child {
+      box-shadow: none;
+    }
+
+    &:nth-child(3) {
+      margin-left: auto;
+    }
+
+    &:hover,
+    &:active {
+      background-color: @color-decorate-element;
+    }
+
+    span {
+      .custom-font(bold; 14px; 26px; uppercase);
+      color: @color-standart;
+    }
+  }
+
+  .list-links__link {
+    height: 55px;
+
+    &:hover {
+      span {
+        color: @bg-decorate-element;
+      }
+    }
+  }
+}
+
+@media (min-width: @desktop) {
+  .list-links__item {
+    flex-basis: 239px;
+  }
+}
