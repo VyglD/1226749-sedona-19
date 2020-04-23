@@ -27,7 +27,7 @@
 }
 
 
-.presentation__video-controls {
+.presentation__controls {
   position: relative;
 
   display: flex;
@@ -41,7 +41,7 @@
   opacity: 0.6;
 }
 
-.presentation__video-progress {
+.presentation__progress {
   box-sizing: border-box;
   display: flex;
   justify-content: center;
@@ -79,18 +79,18 @@
   }
 }
 
-.presentation__video-play {
+.presentation__play {
   flex-grow: 1;
   padding-left: 25px;
   padding-right: 25px;
 }
 
-.presentation__video-subtitles {
+.presentation__subtitles {
   padding-left: 25px;
   padding-right: 25px;
 }
 
-.presentation__video-fullscreen {
+.presentation__fullscreen {
   padding-left: 6px;
   padding-right: 23px;
 }
@@ -121,7 +121,7 @@
     background-image: url("@{img-path}/video-tablet@1x.jpg");
   }
 
-  .presentation__video-controls {
+  .presentation__controls {
     position: absolute;
     bottom: 0;
     margin: 0;
@@ -133,7 +133,7 @@
     background-color: rgb(0, 0, 0, 0.6);
   }
 
-  .presentation__video-progress {
+  .presentation__progress {
     box-sizing: content-box;
     width: 390px;
     padding-right: 16px;
@@ -145,16 +145,16 @@
     }
   }
 
-  .presentation__video-play {
+  .presentation__play {
     order: -1;
     flex-grow: 0;
     padding-left: 35px;
     padding-right: 20px;
   }
 
-  .presentation__video-play,
-  .presentation__video-subtitles,
-  .presentation__video-fullscreen {
+  .presentation__play,
+  .presentation__subtitles,
+  .presentation__fullscreen {
     path,
     polygon {
       fill: @color-decorate-element;
@@ -172,7 +172,7 @@
     background-image: url("@{img-path}/video-desktop@1x.jpg");
   }
 
-  .presentation__video-progress {
+  .presentation__progress {
     width: 540px;
   }
 }

@@ -53,8 +53,8 @@
         <p class="page-main__sub-title page-main__sub-title--form">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
       </div>
       <form method="POST" action="https://echo.htmlacademy.ru" class="page-main__form form">
-        <div class="form__fieldset-wrapper">
-          <fieldset class="form__fieldset form__fieldset--half">
+        <div class="form__fieldset-wrapper form__fieldset-wrapper--second form__fieldset-wrapper--half">
+          <fieldset class="form__fieldset">
             <legend class="form__legend">Представьтесь:</legend>
             <div class="form__input-wrapper">
               <label for="fio-name-id">Имя*:</label>
@@ -65,26 +65,28 @@
               <input type="text" name="fio-surname" id="fio-surname-id" placeholder="Иванов" required>
             </div>
             <div class="form__input-wrapper">
-              <label for="fio-patronymic-id">Отчество*:</label>
+              <label for="fio-patronymic-id">Отчество:</label>
               <input type="text" name="fio-patronymic" id="fio-patronymic-id" placeholder="Александрович">
             </div>
           </fieldset>
         </div>
-        <div class="form__fieldset-wrapper">
+        <div class="form__fieldset-wrapper form__fieldset-wrapper--contacts">
           <fieldset class="form__fieldset">
             <legend class="form__legend">Контактная информация:</legend>
-            <div class="form__input-wrapper form__input-wrapper--phone">
-              <label for="phone-id">Контактный телефон*:</label>
-              <input type="tel" name="phone" id="phone-id" placeholder="Введите телефон" required>
-            </div>
-            <div class="form__input-wrapper form__input-wrapper--email">
-              <label for="email-id">Электронная почта*:</label>
-              <input type="email" name="email" id="email-id" placeholder="Ввведите e-mail" required>
+            <div class="form__fieldset-body form__fieldset-body--contacts">
+              <div class="form__input-wrapper form__input-wrapper--phone">
+                <label for="phone-id"><span>Контактный</span> телефон*:</label>
+                <input type="tel" name="phone" id="phone-id" placeholder="Введите телефон" required>
+              </div>
+              <div class="form__input-wrapper form__input-wrapper--email">
+                <label for="email-id">Электронная почта*:</label>
+                <input type="email" name="email" id="email-id" placeholder="Ввведите e-mail" required>
+              </div>
             </div>
           </fieldset>
         </div>
-        <div class="form__fieldset-wrapper">
-          <fieldset class="form__fieldset form__fieldset--radio form__fieldset--half">
+        <div class="form__fieldset-wrapper form__fieldset-wrapper--first form__fieldset-wrapper--half">
+          <fieldset class="form__fieldset form__fieldset--radio">
             <legend class="form__legend">Ваше общее впечатление:</legend>
             <div class="form__input-wrapper form__input-wrapper--radio">
               <input class="form__radio visually-hidden" type="radio" name="impression" id="impression-positive-id" value="Скорее положительное" checked>
@@ -103,25 +105,27 @@
         <div class="form__fieldset-wrapper">
           <fieldset class="form__fieldset">
             <legend class="form__legend">Посещенные достопримечательности:</legend>
-            <div class="form__input-wrapper form__input-wrapper--checkbox">
-              <input class="form__checkbox visually-hidden" type="checkbox" name="attractions" id="attractions-1" value="Мост Дьявола" checked>
-              <label for="attractions-1">Мост Дьявола</label>
-            </div>
-            <div class="form__input-wrapper form__input-wrapper--checkbox">
-              <input class="form__checkbox visually-hidden"  type="checkbox" name="attractions" id="attractions-2" value="Гора-Колокол" checked>
-              <label for="attractions-2">Гора-Колокол</label>
-            </div>
-            <div class="form__input-wrapper form__input-wrapper--checkbox">
-              <input class="form__checkbox visually-hidden"  type="checkbox" name="attractions" id="attractions-3" value="Слайд-парк" checked>
-              <label for="attractions-3">Слайд-парк</label>
-            </div>
-            <div class="form__input-wrapper form__input-wrapper--checkbox">
-              <input class="form__checkbox visually-hidden" type="checkbox" name="attractions" id="attractions-4" value="Красные скалы">
-              <label for="attractions-4">Красные скалы</label>
+            <div class="form__fieldset-body form__fieldset-body--attractions">
+              <div class="form__input-wrapper form__input-wrapper--checkbox">
+                <input class="form__checkbox visually-hidden" type="checkbox" name="attractions" id="attractions-1" value="Мост Дьявола" checked>
+                <label for="attractions-1">Мост Дьявола</label>
+              </div>
+              <div class="form__input-wrapper form__input-wrapper--checkbox">
+                <input class="form__checkbox visually-hidden"  type="checkbox" name="attractions" id="attractions-2" value="Гора-Колокол" checked>
+                <label for="attractions-2">Гора-Колокол</label>
+              </div>
+              <div class="form__input-wrapper form__input-wrapper--checkbox">
+                <input class="form__checkbox visually-hidden"  type="checkbox" name="attractions" id="attractions-3" value="Слайд-парк" checked>
+                <label for="attractions-3">Слайд-парк</label>
+              </div>
+              <div class="form__input-wrapper form__input-wrapper--checkbox">
+                <input class="form__checkbox visually-hidden" type="checkbox" name="attractions" id="attractions-4" value="Красные скалы">
+                <label for="attractions-4">Красные скалы</label>
+              </div>
             </div>
           </fieldset>
         </div>
-        <div class="form__fieldset-wrapper">
+        <div class="form__fieldset-wrapper form__fieldset-wrapper--feedback">
           <fieldset class="form__fieldset">
             <label class="form__legend" for="feedback-id">Опишите свои эмоции:</label>
             <textarea class="form__feedback-textarea" name="feedback" id="feedback-id" placeholder="Опишите подробно все свои восторги"></textarea>
