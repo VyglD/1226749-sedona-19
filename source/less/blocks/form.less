@@ -6,7 +6,7 @@
 
     display: block;
     height: 1px;
-    width: 320px;
+    width: 100%;
 
     background-color: @color-standart;
     opacity: 0.1;
@@ -101,7 +101,7 @@
     margin-bottom: 0;
 
     &::after {
-      background-image: url("../../img/icon-phone.svg");
+      background-image: url("@{img-path}/icon-phone.svg");
     }
   }
 
@@ -110,7 +110,7 @@
     margin-bottom: 23px;
 
     &::after {
-      background-image: url("../../img/icon-mail.svg");
+      background-image: url("@{img-path}/icon-mail.svg");
     }
   }
 
@@ -167,7 +167,7 @@
 }
 
 .form__checkbox:checked + label::before {
-  background-image: url("../../img/icon-tick.svg");
+  background-image: url("@{img-path}/icon-tick.svg");
   background-position: center;
   background-repeat: no-repeat;
 }

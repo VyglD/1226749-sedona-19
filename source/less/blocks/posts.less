@@ -56,12 +56,123 @@
   border: none;
 
   &::before {
-    content: url("../../img/icon-like.svg");
+    content: url("@{img-path}/icon-like.svg");
 
     width: 23px;
     height: 21px;
 
     cursor: pointer;
-    opacity: 0.3;
+    filter: brightness(0.7);
+  }
+}
+
+@media (min-width: @tablet) {
+  .posts__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 20px;
+    max-width: 648px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .posts__list-item {
+    width: 50%;
+
+    &:last-child::after,
+    &::before {
+      content: none;
+    }
+
+    &:last-child {
+      margin-right: auto;
+    }
+
+    &--top {
+      width: 100%;
+
+      .posts__photo-wrapper {
+        height: 400px;
+      }
+    }
+  }
+
+  .posts__post {
+    width: auto;
+    padding: 0;
+  }
+
+  .posts__photo-wrapper {
+    display: block;
+    width: 100%;
+    height: 267px;
+  }
+
+  .posts__post-photo {
+    width: 100%;
+    height: 100%;
+  }
+
+  .posts__info-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: start;
+    padding-left: 20px;
+    height: 80px;
+
+    background-color: @bg-field;
+  }
+
+  .posts__post-title {
+    margin-top: 15px;
+  }
+
+  .posts__post-author {
+    order: 1;
+    width: 100%;
+    margin-top: -28px;
+  }
+
+  .posts__likes-wrapper {
+    width: 84px;
+    margin-top: 28px;
+  }
+
+  .posts__like-button {
+    margin-right: 10px;
+  }
+}
+
+@media (min-width: @desktop) {
+  .posts__list {
+    max-width: @desktop;
+  }
+
+  .posts__list-item {
+    width: 400px;
+
+    &--top {
+      width: 100%;
+    }
+  }
+
+  .posts__info-wrapper {
+    position: relative;
+    z-index: 1;
+
+    margin-top: -80px;
+    background-color: rgba(0, 0, 0, 0.3);
+
+    p {
+      color: @color-decorate-element;
+    }
+  }
+
+  .posts__like-button {
+    &::before {
+      filter: brightness(1);
+    }
   }
 }
