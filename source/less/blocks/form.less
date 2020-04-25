@@ -60,6 +60,7 @@
     padding: 0;
     margin: 0;
     padding-left: 22px;
+    padding-right: @input-size;
 
     .custom-font(bold; 18px; 26px; none);
     color: @color-standart;
@@ -189,9 +190,284 @@
 }
 
 .form__submit {
-  margin-bottom: 35px;
+  margin-bottom: 32px;
 }
 
 .form__hint {
   display: none;
+}
+
+
+@media (min-width: @tablet) {
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 648px;
+    margin: 0 auto;
+    margin-bottom: 28px;
+  }
+
+  .form__fieldset-wrapper {
+    width: 100%;
+    padding-top: 31px;
+
+    &::before {
+      content: none;
+    }
+
+    .form__fieldset {
+      border-top: 1px solid fade(@color-standart, 10%);
+    }
+
+    &--half {
+      width: 50%;
+      padding-top: 0;
+
+      .form__fieldset {
+        border: none;
+      }
+    }
+
+    &--first,
+    &--second {
+      .form__legend {
+        width: auto;
+        padding: 0;
+        margin: 0;
+        padding-top: 24px;
+
+        text-align: left;
+      }
+    }
+
+    &--first {
+      display: flex;
+      order: -1;
+      align-items: center;
+
+      &::before {
+        content: "";
+        order: 1;
+        width: 1px;
+        height: 292px;
+      }
+
+      .form__fieldset {
+        &--radio {
+          padding-left: 0;
+          padding-right: 0;
+          padding-top: 57px;
+        }
+      }
+    }
+
+    &--second {
+      .form__fieldset {
+        padding-top: 37px;
+        padding-left: 58px;
+        padding-right: 0;
+      }
+    }
+
+    &--contacts {
+      padding-top: 50px;
+
+      .form__input-wrapper {
+        margin-top: 24px;
+      }
+    }
+
+    &--feedback {
+      .form__legend {
+        margin-top: -13px;
+      }
+
+      .form__feedback-textarea {
+        margin-top: 56px;
+        margin-bottom: 56px;
+      }
+
+      .form__submit-wrapper {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
+
+  .form__fieldset {
+    padding: 0;
+  }
+
+  .form__legend {
+    padding: 0;
+    width: 400px;
+
+    font-size: 21px;
+
+    background-color: @color-decorate-element;
+  }
+
+  .form__fieldset-body {
+    &--attractions {
+      display: flex;
+      flex-wrap: wrap;
+      margin-left: auto;
+      margin-right: auto;
+      width: 520px;
+      margin-top: 23px;
+      margin-bottom: 32px;
+
+      div {
+        width: 230px;
+        margin-left: 30px;
+        margin-top: 16px;
+        margin-bottom: 16px;
+      }
+    }
+  }
+
+  .form__input-wrapper {
+    &--radio {
+      margin-bottom: 20px;
+
+      label {
+        &::before {
+          margin-right: 17px;
+        }
+      }
+    }
+
+    &--checkbox {
+      label {
+        &::before {
+          margin-right: 23px;
+        }
+      }
+    }
+  }
+
+  .form__submit {
+    margin-bottom: 32px;
+    width: 324px;
+    padding-left: 64px;
+    padding-right: 0;
+
+    text-align: left;
+  }
+
+  .form__hint {
+    display: block;
+    margin-top: 17px;
+
+    text-align: right;
+    .custom-font(regular; 14px; 26px; uppercase);
+    color: @color-standart-decorate;
+  }
+}
+
+@media (min-width: @desktop) {
+  .form {
+    min-width: 960px;
+    margin-bottom: 33px;
+  }
+
+  .form__fieldset-wrapper {
+    &--first,
+    &--second {
+      .form__legend {
+        padding-top: 9px;
+      }
+    }
+
+    &--first {
+      .form__legend {
+        padding-left: 80px;
+      }
+    }
+
+    &--second {
+      .form__fieldset {
+        padding-left: 80px;
+      }
+    }
+
+    &--contacts {
+      padding-top: 47px;
+    }
+  }
+
+  .form__input-wrapper {
+    &--radio {
+      label {
+        &::before {
+          margin-right: 22px;
+        }
+      }
+    }
+
+    &--phone,
+    &--email {
+      &::after {
+        position: relative;
+      }
+
+      label {
+        padding: 0;
+        margin: 0;
+        align-self: center;
+        margin-right: 16px;
+      }
+
+      input {
+        width: 258px;
+        flex-grow: 0;
+      }
+    }
+
+    &--phone {
+      span {
+        display: none;
+      }
+    }
+  }
+
+  .form__fieldset-body {
+    display: flex;
+    width: 100%;
+
+    &--attractions {
+      margin-top: 40px;
+      margin-bottom: 47px;
+      justify-content: space-between;
+
+      div {
+        width: auto;
+        margin: 0;
+        padding: 0;
+      }
+
+      label {
+        margin: 0;
+      }
+    }
+
+    &--contacts {
+      margin-top: 51px;
+      margin-bottom: 22px;
+
+      div {
+        flex-direction: row;
+        width: 50%;
+        margin: 0;
+        padding: 0;
+      }
+    }
+  }
+
+  .form__submit {
+    padding: 0;
+    width: 480px;
+    text-align: center;
+  }
 }
