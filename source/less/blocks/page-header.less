@@ -1,0 +1,43 @@
+@width-logo-mobile: 102px;
+@width-logo-tablet: @width-logo-mobile;
+@width-logo-desktop: 187px;
+
+@height-logo-mobile: 83px;
+@height-logo-tablet: 84px;
+@height-logo-desktop: 96px;
+
+.page-header__logo-wrapper {
+  height: 56px;
+  display: flex;
+  justify-content: center;
+}
+
+.page-header__logo-picture {
+  width: auto;
+  height: auto;
+}
+
+.page-header__logo {
+  width: auto;
+  height: auto;
+}
+
+@media (min-width: @tablet) {
+  .page-header__logo-wrapper {
+    position: absolute;
+    top: 0;
+    left: 50%;
+
+    width: @width-logo-tablet;
+    height: @height-logo-tablet;
+    margin-left: @width-logo-tablet / -2;
+  }
+}
+
+@media (min-width: @desktop) {
+  .page-header__logo-wrapper {
+    width: @width-logo-desktop;
+    height: @height-logo-desktop;
+    margin-left: @width-logo-desktop / -2;
+  }
+}

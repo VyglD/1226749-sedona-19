@@ -11,6 +11,8 @@
 
   &--short {
     height: 158px;
+
+    background-size: @tablet;
   }
 }
 
@@ -27,7 +29,28 @@
   margin-top: 40px;
   margin-bottom: 42px;
 
-  .center-text(270px);
+  .center-text(271px);
+
+  &::before {
+    content: url("@{img-path}/bg-intro-triangle-mobile.svg");
+
+    position: absolute;
+    left: 0;
+
+    display: block;
+    min-width: @mobile;
+    width: 100%;
+    margin-top: -65px;
+
+    overflow: hidden;
+  }
+
+  &--photo,
+  &--form {
+    &::before {
+      margin-top: -63px;
+    }
+  }
 
   &--photo {
     margin-top: 38px;
@@ -38,6 +61,24 @@
     width: 280px;
     margin-top: 38px;
     margin-bottom: 17px;
+  }
+
+  &--index {
+    &::after {
+      content: url("@{img-path}/bg-triangle.svg");
+
+      position: absolute;
+      left: 0;
+
+      display: block;
+      min-width: @mobile;
+      width: 100%;
+      height: 37px;
+      margin-top: -8px;
+
+      background-color: @bg-decorate-element;
+      overflow: hidden;
+    }
   }
 }
 
@@ -80,7 +121,7 @@
 }
 
 .page-main__interested {
-  padding-top: 10px;
+  padding-top: 11px;
 }
 
 .page-main__presentation {
@@ -96,6 +137,8 @@
 
     &--short {
       height: 290px;
+
+      background-size: 100%;
     }
   }
 
@@ -116,12 +159,28 @@
     margin-top: 50px;
     margin-bottom: 50px;
 
+    &::before {
+      content: url("@{img-path}/bg-intro-triangle-tablet.svg");
+
+      margin-top: -106px;
+    }
+
     &--photo,
     &--form {
       .page-main__title {
         margin-top: 74px;
 
         font-size: 30px;
+      }
+
+      &::before {
+        margin-top: -131px;
+      }
+    }
+
+    &--index {
+      &::after {
+        content: none;
       }
     }
   }
@@ -133,14 +192,14 @@
   .page-main__sub-title {
     &--photo,
     &--form {
-      width: 440px;
+      width: 441px;
       margin: 0 auto;
       margin-top: 31px;
     }
   }
 
   .page-main__interested {
-    padding-top: 30px;
+    padding-top: 32px;
   }
 
   .page-main__presentation {
@@ -165,8 +224,18 @@
   }
 
   .page-main__titles-wrapper {
+    &::before {
+      content: url("@{img-path}/bg-intro-triangle-desktop.svg");
+
+      margin-top: -107px;
+    }
+    
     &--photo,
-    &--form {
+    &--form { 
+      &::before {
+        margin-top: -167px;
+      }
+
       .page-main__title {
         margin-top: 111px;
       }
