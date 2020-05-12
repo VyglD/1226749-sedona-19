@@ -114,7 +114,8 @@
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-around;
-    height: 330px;
+    flex-wrap: wrap;
+    padding-bottom: 42px;
   }
 
   .sub-reasons__item {
@@ -137,7 +138,7 @@
 
     &--gift {
       order: 1;
-      width: 163px;
+      width: 165px;
 
       &::before {
         width: 65px;
@@ -147,7 +148,7 @@
     }
 
     &--burger {
-      width: 151px;
+      width: 152px;
 
       &::before {
         width: 78px;
@@ -170,7 +171,7 @@
   }
 
   .sub-reasons__item-wrapper {
-    width: auto;
+    width: 100%;
 
     text-align: center;
   }
@@ -181,12 +182,16 @@
 }
 
 @media (min-width: @desktop) {
+  .sub-reasons {
+    padding-bottom: 62px;
+  }
+
   .sub-reasons__item {
     &--house {
       width: 312px;
 
       .sub-reasons__item-wrapper {
-        width: 252px;
+        width: 254px;
       }
     }
 
@@ -194,7 +199,7 @@
       width: 320px;
 
       .sub-reasons__item-wrapper {
-        width: 282px;
+        width: 283px;
       }
     }
 

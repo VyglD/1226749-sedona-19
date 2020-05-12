@@ -14,7 +14,9 @@
   &--decorate {
     display: flex;
     flex-wrap: wrap;
+    flex-basis: auto;
     justify-content: center;
+    width: 100%;
 
     background-color: @bg-decorate-element;
   }
@@ -22,8 +24,8 @@
   &::after {
     content: "";
     display: block;
-    margin: 0 auto;
-    width: 100%;
+    margin: 1px auto 0 auto;
+    width: 87.5%;
     height: 1px;
 
     background-color: @color-standart;
@@ -43,14 +45,17 @@
   padding-top: 26px;
   padding-bottom: 28px;
 
-  .center-text(246px);
+  .center-text(247px);
   color: @color-standart;
 
   &--decorate {
+    flex-grow: 1;
     padding-top: 38px;
     padding-bottom: 40px;
-
-    .center-text(265px);
+    width: 265px;
+    max-width: 265px;
+    margin-left: 0;
+    margin-right: 0;
 
     color: @color-decorate-element;
 
@@ -60,8 +65,14 @@
   }
 }
 
+.reasons_img-wrapper {
+  width: 100%;
+}
+
 .reasons__item-img {
   display: block;
+  width: 100%;
+  height: auto;
 }
 
 .reasons__item-title {
@@ -86,6 +97,7 @@
 }
 
 .reasons__item-description {
+  max-width: 100%;
   margin: 0;
 
   .custom-font(regular; 14px; 21px; uppercase);
@@ -94,7 +106,7 @@
 
 .reasons__sub-reasons {
   flex-basis: 100%;
-  padding-bottom: 19px;
+  padding-bottom: 23px;
   padding-top: 27px;
 }
 
@@ -122,9 +134,15 @@
   .reasons__body-wrapper {
     padding-top: 46px;
     padding-bottom: 44px;
+
+    &--decorate {
+      max-width: none;
+    }
   }
 
   .reasons_img-wrapper {
+    width: auto;
+
     &--second {
       order: -1;
     }
@@ -136,9 +154,15 @@
   }
 
   .reasons__item-title {
-    width: 150px;
+    width: 151px;
 
     font-size: 21px;
+
+    &--decorate {
+      span {
+        display: block;
+      }
+    }
   }
 
   .reasons__item-number {
@@ -151,7 +175,7 @@
   }
 
   .reasons__item-description {
-    width: 161px;
+    width: 165px;
 
     &--middle {
       width: 145px;
@@ -162,18 +186,23 @@
 @media (min-width: @desktop) {
   .reasons__body-wrapper {
     padding-bottom: 65px;
+    width: 300px;
 
     &--decorate {
       padding-top: 53px;
       padding-bottom: 44px;
 
       .reasons__item-description {
-        width: auto;
+        width: 270px;
       }
     }
 
     &--second {
       width: 225px;
+
+      .reasons__item-description {
+        width: 230px;
+      }
     }
   }
 

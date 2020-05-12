@@ -2,6 +2,20 @@
   position: relative;
 }
 
+.main-nav__list {
+  &--close {
+    margin-top: -223px;
+  }
+
+  &--open {
+    margin-top: 0;
+  }
+
+  &--animate {
+    transition: margin-top 1s ease;
+  }
+}
+
 .main-nav-btn-decorate(@top; @right) {
   position: absolute;
   top: @top;
@@ -53,6 +67,13 @@
 
   .main-nav__list {
     flex-basis: @tablet;
+
+    &--close,
+    &--open,
+    &--animate {
+      margin-top: 0;
+      transition: none;
+    }
   }
 }
 

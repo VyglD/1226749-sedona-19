@@ -31,6 +31,18 @@
   &:not(:last-child) {
     margin-right: 6px;
   }
+
+  &:hover {
+    background-color: @bg-decorate-element-hover;
+  }
+
+  &:active {
+    background-color: @bg-decorate-element-active;
+
+    svg {
+      opacity: 0.3;
+    }
+  }
 }
 
 .page-footer__socials-img-wrapper {
@@ -58,11 +70,22 @@
 .page-footer__copyright-link {
   svg {
     width: 40px;
+    height: 40px;
     overflow: visible;
     padding-left: 6px;
     padding-top: 8px;
 
     fill: @color-standart;
+  }
+
+  &:hover {
+    svg {
+      fill: @bg-decorate-element;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 

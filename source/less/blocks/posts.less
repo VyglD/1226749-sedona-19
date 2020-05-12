@@ -54,23 +54,17 @@
 
   background-color: transparent;
   border: none;
+}
 
-  &::before {
-    content: url("@{img-path}/icon-like.svg");
-
-    width: 23px;
-    height: 21px;
-
-    cursor: pointer;
-    filter: brightness(0.7);
-  }
+.posts__like-icon {
+  opacity: 0.3;
 }
 
 @media (min-width: @tablet) {
   .posts__list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
     padding-top: 20px;
     max-width: 648px;
     margin-left: auto;
@@ -132,7 +126,7 @@
   .posts__post-author {
     order: 1;
     width: 100%;
-    margin-top: -28px;
+    margin-top: -27px;
   }
 
   .posts__likes-wrapper {
@@ -151,7 +145,7 @@
   }
 
   .posts__list-item {
-    width: 400px;
+    width: calc(100% / 3);
 
     &--top {
       width: 100%;
@@ -170,9 +164,19 @@
     }
   }
 
-  .posts__like-button {
-    &::before {
-      filter: brightness(1);
+  .posts__post-title {
+    margin-top: 17px;
+  }
+
+  .posts__post-author {
+    margin-top: -24px;
+  }
+
+  .posts__like-icon {
+    opacity: 1;
+
+    svg {
+      fill: @color-decorate-element;
     }
   }
 }
