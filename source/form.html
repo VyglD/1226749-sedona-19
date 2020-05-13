@@ -11,8 +11,9 @@
   <body class="page">
     <header class="page-header">
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button" id="close-btn-menu"><span class="visually-hidden">Скрыть меню</span></button>
-        <ul class="main-nav__list list-links list-style-reset" id="nav">
+        <button class="main-nav__close-button main-nav__close-button--nojs" type="button" id="close-btn-menu-js"><span class="visually-hidden">Скрыть меню</span></button>
+        <button class="main-nav__toggle-button main-nav__toggle-button--nojs" type="button" id="toggle-btn-menu-js"><span class="visually-hidden">Открыть меню</span></button>
+        <ul class="main-nav__list list-links list-style-reset" id="nav-js">
           <li class="list-links__item">
             <a class="list-links__link" href="index.html">
               <span>Главная</span>
@@ -23,7 +24,7 @@
               <span>Фото и видео</span>
             </a>
           </li>
-          <li class="list-links__item">
+          <li class="list-links__item list-links__item--active">
             <a class="list-links__link list-links__link--active">
               <span>Форма отзыва</span>
             </a>
@@ -34,13 +35,12 @@
             </a>
           </li>
         </ul>
-        <button class="main-nav__close-button" type="button" id="toggle-btn-menu"><span class="visually-hidden">Открыть меню</span></button>
       </nav>
       <div class="page-header__logo-wrapper">
         <a class="page-header__logo-link" href="index.html">
           <picture class="page-header__logo-picture">
-            <source media="(min-width: 768px) and (max-width: 1199px)" srcset="img/logo-sedona-tablet.svg 1x">
             <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg 1x">
+            <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg 1x">
             <img class="page-header__logo" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Логотип сервиса по поиску гостиниц в городе Седона">
           </picture>
         </a>
