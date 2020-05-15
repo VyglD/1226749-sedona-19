@@ -8,11 +8,18 @@
   background-image: url("@{img-path}/bg-back-mobile@1x.jpg");
   background-position: bottom;
   background-size: cover;
+  background-repeat: no-repeat;
 
   &--short {
     height: 158px;
 
     background-size: @tablet;
+  }
+}
+
+@media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+  .page-main__header {
+    background-image: url("@{img-path}/bg-back-mobile@2x.jpg");
   }
 }
 
@@ -142,6 +149,12 @@
     }
   }
 
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    .page-main__header {
+      background-image: url("@{img-path}/bg-back-tablet@2x.jpg");
+    }
+  }
+
   .page-main__poster {
     margin-top: 77px;
     width: 460px;
@@ -214,6 +227,12 @@
 
     &--short {
       height: 301px;
+    }
+  }
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    .page-main__header {
+      background-image: url("@{img-path}/bg-back-desktop@2x.jpg");
     }
   }
 

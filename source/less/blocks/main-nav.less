@@ -3,15 +3,15 @@
 }
 
 .main-nav__list {
-  &--close {
+  &--close-js {
     margin-top: -223px;
   }
 
-  &--open {
+  &--open-js {
     margin-top: 0;
   }
 
-  &--animate {
+  &--animate-js {
     transition: margin-top 1s ease;
   }
 }
@@ -28,11 +28,17 @@
   border: none;
 }
 
-.main-nav__toggle {
+.main-nav__close-button {
   .main-nav-btn-decorate(17px; 20px);
+
+  outline: none;
+
+  &--nojs {
+    display: none;
+  }
 }
 
-.main-nav__toggle::before {
+.main-nav__close-button::before {
   content: url("@{img-path}/icon-cross.svg");
 
   width: 23px;
@@ -41,8 +47,10 @@
   cursor: pointer;
 }
 
-.main-nav__close-button {
+.main-nav__toggle-button {
   .main-nav-btn-decorate(240px; 20px);
+
+  outline: none;
 
   &::before {
     content: url("@{img-path}/icon-menu.svg");
@@ -52,6 +60,11 @@
 
     cursor: pointer;
   }
+
+  &--nojs,
+  &--open-js {
+    display: none;
+  }
 }
 
 @media (min-width: @tablet) {
@@ -60,17 +73,17 @@
     justify-content: center;
   }
 
-  .main-nav__toggle,
-  .main-nav__close-button {
+  .main-nav__close-button,
+  .main-nav__toggle-button {
     display: none;
   }
 
   .main-nav__list {
     flex-basis: @tablet;
 
-    &--close,
-    &--open,
-    &--animate {
+    &--close-js,
+    &--open-js,
+    &--animate-js {
       margin-top: 0;
       transition: none;
     }

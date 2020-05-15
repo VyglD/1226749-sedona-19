@@ -26,6 +26,11 @@
   background-size: cover;
 }
 
+@media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+  .presentation__video {
+    background-image: url("@{img-path}/video-mobile@2x.jpg");
+  }
+}
 
 .presentation__controls {
   position: relative;
@@ -101,8 +106,10 @@
 .presentation__subtitles,
 .presentation__fullscreen {
   height: 23px;
+
   border: none;
   background: none;
+  cursor: pointer;
 
   svg {
     fill: #5c6870;
@@ -150,6 +157,12 @@
     height: 100%;
 
     background-image: url("@{img-path}/video-tablet@1x.jpg");
+  }
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    .presentation__video {
+      background-image: url("@{img-path}/video-tablet@2x.jpg");
+    }
   }
 
   .presentation__controls {
@@ -213,6 +226,12 @@
 
   .presentation__video {
     background-image: url("@{img-path}/video-desktop@1x.jpg");
+  }
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    .presentation__video {
+      background-image: url("@{img-path}/video-desktop@2x.jpg");
+    }
   }
 
   .presentation__progress {
