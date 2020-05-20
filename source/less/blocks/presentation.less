@@ -110,6 +110,7 @@
   border: none;
   background: none;
   cursor: pointer;
+  outline: none;
 
   svg {
     fill: #5c6870;
@@ -199,8 +200,7 @@
   .presentation__play,
   .presentation__subtitles,
   .presentation__fullscreen {
-    path,
-    polygon {
+    svg {
       fill: @color-decorate-element;
     }
   }
@@ -208,13 +208,19 @@
   .presentation__play:hover,
   .presentation__subtitles:hover,
   .presentation__fullscreen:hover {
-    opacity: 0.6;
+    svg {
+      opacity: 0.6;
+      fill: @color-decorate-element;
+    }
   }
 
   .presentation__play:active,
   .presentation__subtitles:active,
   .presentation__fullscreen:active {
-    opacity: 0.3;
+    svg {
+      opacity: 0.3;
+      fill: @color-decorate-element;
+    }
   }
 }
 
