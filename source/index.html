@@ -1,14 +1,8 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <include src="source/html_blocks/head.html"></include>
     <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" type="text/css" href="css/style.min.css">
-    <script src="js/script.js" defer></script>
-    <script src="js/picturefill.min.js"></script>
-    <script src="js/svg4everybody.js"></script>
-    <script>svg4everybody();</script>
   </head>
   <body class="page">
     <header class="page-header">
@@ -135,7 +129,7 @@
       <section class="page-main__interested interested">
         <h2 class="interested__title">Заинтересовались?</h2>
         <p class="interested__description"><span>Укажите предполагаемые даты поездки,</span> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <button class="interested__button action-button" type="button"><span>Найти гостиницу</span></button>
+        <a class="interested__button action-button" href="search.html"><span>Найти гостиницу</span></a>
       </section>
       <section class="page-main__dislocation dislocation">
         <h2 class="visually-hidden">Местораположение города Седона</h2>
@@ -149,6 +143,6 @@
         </picture>
       </section>
     </main>
-    <include src="source/footer.html"></include>
+    <include src="source/html_blocks/footer.html"></include>
   </body>
 </html>

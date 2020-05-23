@@ -209,6 +209,11 @@
   background-color: fade(@color-standart-decorate, 30%);
 }
 
+.form__radio:disabled + label::before,
+.form__checkbox:disabled + label::before {
+  opacity: 0.2;
+}
+
 .form__checkbox:checked + label::before {
   background-image: url("@{img-path}/icon-tick.svg");
   background-position: center;
@@ -413,8 +418,7 @@
   .form__submit {
     margin-bottom: 32px;
     width: 324px;
-    padding-left: 64px;
-    padding-right: 0;
+    padding: 0 12px 0 0;
 
     text-align: left;
   }
