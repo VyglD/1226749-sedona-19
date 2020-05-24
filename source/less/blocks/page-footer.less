@@ -4,6 +4,8 @@
   margin-right: auto;
   padding-top: 36px;
   padding-bottom: 20px;
+
+  background-color: @color-decorate-element;
 }
 
 .page-footer__hashtag {
@@ -46,7 +48,7 @@
   }
 }
 
-.page-footer__socials-img-wrapper {
+.page-footer__socials-link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -91,6 +93,10 @@
 
   &:active {
     opacity: 0.3;
+
+    svg {
+      fill: @color-standart;
+    }
   }
 }
 
