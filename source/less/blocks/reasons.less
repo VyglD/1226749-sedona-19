@@ -1,6 +1,8 @@
 .reasons__list {
   display: flex;
   flex-wrap: wrap;
+
+  background-color: @bg-standart-decorate;
 }
 
 .reasons__separate polygon {
@@ -9,6 +11,8 @@
 
 .reasons__item {
   flex-basis: 100%;
+  flex-grow: 1;
+
   background-color: @bg-standart-decorate;
 
   &--decorate {
@@ -52,8 +56,8 @@
     flex-grow: 1;
     padding-top: 38px;
     padding-bottom: 40px;
-    width: 265px;
-    max-width: 265px;
+    width: 266px;
+    max-width: 266px;
     margin-left: 0;
     margin-right: 0;
 
@@ -120,7 +124,7 @@
 
 @media (min-width: @tablet) {
   .reasons__item {
-    flex-basis: calc(100% / 3);
+    flex-basis: calc(99% / 3);
 
     &--decorate {
       flex-basis: 100%;

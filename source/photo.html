@@ -1,14 +1,8 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" type="text/css" href="css/style.min.css">
-    <script src="js/script.js" defer></script>
-    <script src="js/picturefill.min.js"></script>
-    <script src="js/svg4everybody.js"></script>
-    <script>svg4everybody();</script>
+    <include src="source/html_blocks/head.html"></include>
+    <title>HTML Academy: Седона - фото и видео</title>
   </head>
   <body class="page">
     <header class="page-header">
@@ -97,7 +91,7 @@
                   <source type="image/webp" srcset="img/photo-cactus-mobile@1x.webp 1x, img/photo-cactus-mobile@2x.webp 2x">
                   <source media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.jpg 1x, img/photo-cactus-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.jpg 1x, img/photo-cactus-tablet@2x.jpg 2x">
-                  <img class="posts__post-photo" src="img/photo-cactus-mobile@1x.jpg" srcset="img/photo-cactus-mobile@2x.jpg 2x" width="280" height="280" alt="Закат над скалами">
+                  <img class="posts__post-photo" src="img/photo-cactus-mobile@1x.jpg" srcset="img/photo-cactus-mobile@2x.jpg 2x" width="280" height="280" alt="Цветущий кактус">
                 </picture>
               </a>
               <div class="posts__info-wrapper">
@@ -126,7 +120,7 @@
                   <source type="image/webp" srcset="img/photo-roads-mobile@1x.webp 1x, img/photo-roads-mobile@2x.webp 2x">
                   <source media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.jpg 1x, img/photo-roads-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.jpg 1x, img/photo-roads-tablet@2x.jpg 2x">
-                  <img class="posts__post-photo" src="img/photo-roads-mobile@1x.jpg" srcset="img/photo-roads-mobile@2x.jpg 2x" width="280" height="280" alt="Закат над скалами">
+                  <img class="posts__post-photo" src="img/photo-roads-mobile@1x.jpg" srcset="img/photo-roads-mobile@2x.jpg 2x" width="280" height="280" alt="Догора в горах">
                 </picture>
               </a>
               <div class="posts__info-wrapper">
@@ -155,7 +149,7 @@
                   <source type="image/webp" srcset="img/photo-bridge-mobile@1x.webp 1x, img/photo-bridge-mobile@2x.webp 2x">
                   <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
-                  <img class="posts__post-photo" src="img/photo-bridge-mobile@1x.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x" width="280" height="280" alt="Закат над скалами">
+                  <img class="posts__post-photo" src="img/photo-bridge-mobile@1x.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x" width="280" height="280" alt="Каменная арка между двух скал">
                 </picture>
               </a>
               <div class="posts__info-wrapper">
@@ -207,6 +201,6 @@
         </div>
       </section>
     </main>
-    <include src="source/footer.html"></include>
+    <include src="source/html_blocks/footer.html"></include>
   </body>
 </html>
