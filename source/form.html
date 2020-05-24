@@ -11,29 +11,21 @@
         <button class="main-nav__toggle-button main-nav__toggle-button--nojs" type="button" id="toggle-btn-menu-js"><span class="visually-hidden">Открыть меню</span></button>
         <ul class="main-nav__list list-links list-style-reset" id="nav-js">
           <li class="list-links__item">
-            <a class="list-links__link" href="index.html">
-              <span>Главная</span>
-            </a>
+            <a class="list-links__link" href="index.html">Главная</a>
           </li>
           <li class="list-links__item">
-            <a class="list-links__link" href="photo.html">
-              <span>Фото и видео</span>
-            </a>
+            <a class="list-links__link" href="photo.html">Фото и видео</a>
           </li>
           <li class="list-links__item list-links__item--active">
-            <a class="list-links__link list-links__link--active">
-              <span>Форма отзыва</span>
-            </a>
+            <a class="list-links__link list-links__link--active">Форма отзыва</a>
           </li>
           <li class="list-links__item">
-            <a class="list-links__link" href="https://htmlacademy.ru/intensive/adaptive">
-              <span>HTML Academy</span>
-            </a>
+            <a class="list-links__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
           </li>
         </ul>
       </nav>
       <div class="page-header__logo-wrapper">
-        <a class="page-header__logo-link" href="index.html">
+        <a class="page-header__logo-link" href="index.html" aria-label="Логотип сайта - переход на главную страницу">
           <picture class="page-header__logo-picture">
             <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
@@ -128,7 +120,7 @@
             <label class="form__legend" for="feedback-id">Опишите свои эмоции:</label>
             <textarea class="form__feedback-textarea" name="feedback" id="feedback-id" placeholder="Опишите подробно все свои восторги"></textarea>
             <div class="form__submit-wrapper">
-              <button class="form__submit action-button" type="submit" id="form-submit-js">Отправить отзыв</button>
+              <button class="form__submit action-button" type="submit" id="form-submit-js"><span>Отправить отзыв</span></button>
               <p class="form__hint">* — обязательные поля</p>
             </div>
           </fieldset>
@@ -142,7 +134,7 @@
           <h2 class="modal__title">Ваш отзыв отправлен!</h2>
           <p class="modal__message">Спасибо за ваше участие, ваш отзыв уже поступил к нам. <span>В ближайшее время мы опубликуем его на сайте.</span</p>
         </div>
-        <button class="action-button modal__button" type="button">Закрыть окно</button>
+        <button class="action-button modal__button" type="button"><span>Закрыть окно</span></button>
       </div>
     </section>
     <section class="modal" id="modal-problem-js">
@@ -151,7 +143,7 @@
           <h2 class="modal__title">Что-то пошло не так!</h2>
           <p class="modal__message">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
         </div>
-        <button class="action-button modal__button" type="button">Ок</button>
+        <button class="action-button modal__button" type="button"><span>Ок</span></button>
       </div>
     </section>
   </body>

@@ -1,0 +1,15 @@
+.page {
+  min-width: @mobile;
+  max-width: @desktop;
+  margin: 0 auto;
+  padding: 0;
+
+  color: @color-standart;
+}
+
+@media (min-width: @desktop) {
+  .page {
+    box-shadow: 0 5px 15px 0 rgba(0, 1, 1, 0.2);
+    background-color: @bg-field;
+  }
+}

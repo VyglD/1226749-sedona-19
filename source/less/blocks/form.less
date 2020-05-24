@@ -112,6 +112,7 @@
 
       display: block;
       width: @input-size;
+      min-width: @input-size;
       height: @input-size;
 
       background-color: @bg-standart-decorate;
@@ -273,7 +274,7 @@
     justify-content: center;
     max-width: 648px;
     margin: 0 auto;
-    margin-bottom: 28px;
+    padding-bottom: 28px;
   }
 
   .form__fieldset-wrapper {
@@ -436,7 +437,7 @@
 @media (min-width: @desktop) {
   .form {
     min-width: 960px;
-    margin-bottom: 33px;
+    padding-bottom: 33px;
   }
 
   .form__fieldset-wrapper {
@@ -520,6 +521,7 @@
     }
 
     &--contacts {
+      flex-wrap: wrap;
       margin-top: 51px;
       margin-bottom: 22px;
 
@@ -528,6 +530,15 @@
         width: 50%;
         margin: 0;
         padding: 0;
+      }
+
+      .form__input-wrapper:nth-child(2n - 1) {
+        box-sizing: border-box;
+        padding-right: 80px;
+      }
+
+      .form__input-wrapper:nth-child(2n) {
+        justify-content: flex-end;
       }
     }
   }

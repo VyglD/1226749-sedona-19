@@ -45,7 +45,7 @@
   &:active {
     background-color: @bg-decorate-element-active;
 
-    span {
+    .list-links__link {
       opacity: 0.3;
     }
   }
@@ -66,10 +66,7 @@
 
   color: @color-decorate-element;
   text-decoration: none;
-
-  span {
-    .custom-font(bold; 18px; 40px; uppercase);
-  }
+  .custom-font(bold; 18px; 40px; uppercase);
 
   &--active {
     cursor: default;
@@ -112,32 +109,32 @@
       background-color: @color-decorate-element;
     }
 
-    span {
-      .custom-font(bold; 14px; 26px; uppercase);
-      color: @color-standart;
+    &:active {
+      .list-links__link {
+        color: @color-standart;
+      }
     }
   }
 
   .list-links__link {
     height: 55px;
 
+    .custom-font(bold; 14px; 26px; uppercase);
+    color: @color-standart;
+
     &:hover {
-      span {
-        color: @bg-decorate-element;
-      }
+      color: @bg-decorate-element;
     }
 
     &--active {
+      color: #766357;
+
       &:hover {
-        span {
-          color: @color-standart;
-        }
+        color: #604e43;
       }
 
       &:active {
-        span {
-          opacity: 0.3;
-        }
+        opacity: 1;
       }
     }
   }

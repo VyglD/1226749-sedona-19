@@ -1,3 +1,8 @@
+.page-main {
+  display: block;
+  background-color: @color-decorate-element;
+}
+
 .page-main__header {
   display: flex;
   align-items: center;
@@ -143,8 +148,9 @@
 }
 
 .page-main__presentation {
-  margin-top: 34px;
-  margin-bottom: 39px;
+  margin: 0;
+  padding-top: 34px;
+  padding-bottom: 39px;
 }
 
 @media (min-width: @tablet) {
@@ -226,7 +232,7 @@
   }
 
   .page-main__presentation {
-    margin-top: 66px;
+    padding-top: 66px;
   }
 }
 
@@ -256,6 +262,11 @@
     &::before {
       content: url("@{img-path}/bg-intro-triangle-desktop.svg");
 
+      left: 50%;
+
+      max-width: @desktop;
+      margin-left: -1 * @desktop / 2;
+
       background-image: none;
     }
 
@@ -272,7 +283,7 @@
   }
 
   .page-main__presentation {
-    margin-top: 72px;
-    margin-bottom: 84px;
+    padding-top: 72px;
+    padding-bottom: 84px;
   }
 }
