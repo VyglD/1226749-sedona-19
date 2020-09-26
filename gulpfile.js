@@ -38,9 +38,11 @@ gulp.task('copy', function() {
 
 gulp.task('js-main', function () {
   return gulp.src([
-      'source/js/**/*.js',
-      '!source/js/picturefill.min.js',
-      '!source/js/svg4everybody.js'
+      'source/js/util.js',
+      'source/js/backend.js',
+      'source/js/menu.js',
+      'source/js/form.js',
+      'source/js/map.js'
     ])
     .pipe(sourcemap.init())
     .pipe(concat('app.min.js'))
