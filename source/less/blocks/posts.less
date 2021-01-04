@@ -52,9 +52,24 @@
   margin: 0;
   margin-right: 14px;
 
+  cursor: pointer;
   background-color: transparent;
   border: none;
   opacity: 0.3;
+  outline: none;
+}
+
+.posts__like-button:hover,
+.posts__like-button:focus {
+  opacity: 1;
+}
+
+.posts__like-button:hover svg {
+  fill: @bg-decorate-element-hover;
+}
+
+.posts__like-button:active {
+  opacity: 0.1;
 }
 
 @media (min-width: @tablet) {
